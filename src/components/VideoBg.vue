@@ -187,7 +187,6 @@ export default {
     },
     async loadVideo() {
       this.video = await this.setupCamera();
-      console.log(this.video);
       this.video.play();
     },
     async setupCamera() {
@@ -250,7 +249,8 @@ export default {
             _this.drawMask(canvas, _this.video, backgroundDarkeningMask);
           }
         } catch (error) {
-          console.log(error);
+          // eslint-disable-next-line no-console
+          console.error(error);
         } finally {
           requestAnimationFrame(updateFrame);
         }
