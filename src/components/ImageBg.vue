@@ -2,7 +2,7 @@
   <div>
     <div class="flex justify-center mb-10">
       <img hidden id="image" ref="image" src="../assets/img.jpg" />
-      <canvas id="canvas" ref="canvas"></canvas>
+      <canvas class="max-w-full" id="canvas" ref="canvas"></canvas>
     </div>
     <div v-if="loading" class="loader"></div>
     <div class="flex justify-center">
